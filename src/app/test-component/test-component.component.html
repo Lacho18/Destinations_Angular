@@ -1,0 +1,17 @@
+<!--<div *ngFor="let data of dataArray">
+  <div>
+    <h1>{{ data.name }}</h1>
+    <p>{{ data.age }} years old</p>
+  </div>
+  <div>
+    <p>
+      His height is <span>{{ data.height }}</span>
+    </p>
+  </div>
+</div>-->
+
+<button (click)="clickHandler()" *ngFor="let data of dataArray">
+  {{ data.name }}
+</button>
+
+<p>Maika ti da eba</p>
