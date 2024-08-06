@@ -1,2 +1,7 @@
-<app-test-component></app-test-component>
+<input type="text" placeholder="Enter some text" (change)="onChange($event)" />
+<app-test-component
+  [someData]="textValue"
+  (dataToTheParent)="handleChildEvent($event)"
+></app-test-component>
+<h1>{{ receivedData }}</h1>
 <router-outlet />

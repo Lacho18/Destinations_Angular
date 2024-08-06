@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 //import testComponent from './test-component/test-component.component';
 import { TestComponentComponent } from './test-component/test-component.component';
@@ -12,4 +12,17 @@ import { TestComponentComponent } from './test-component/test-component.componen
 })
 export class AppComponent {
   title = 'my-app';
+  textValue = "";
+  receivedData = "";
+
+  onChange(e: Event) {
+    e.preventDefault();
+    const inputElement = e.target as HTMLInputElement;
+    this.textValue = inputElement.value;
+    console.log(this.textValue);
+  }
+
+  handleChildEvent(data: string) {
+    this.receivedData = data;
+  }
 }

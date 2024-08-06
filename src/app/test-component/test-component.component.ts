@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -10,6 +10,8 @@ import { CommonModule } from '@angular/common';
   styleUrl: './test-component.component.css'
 })
 export class TestComponentComponent {
+  @Input() someData = "";
+  @Output() dataToTheParent = new EventEmitter<string>();
   dataArray = [
     {
       id: 0,
@@ -34,5 +36,6 @@ export class TestComponentComponent {
 
   clickHandler() {
     console.log("Clicked");
+    this.dataToTheParent.emit("You have clicked a button :O");
   }
 }
