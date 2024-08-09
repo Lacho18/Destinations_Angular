@@ -1,4 +1,8 @@
 <div class="root-div">
   <app-header />
+
+  @for(destination of destinationsArray; track destination.id) {
+  <app-destination-card />
+  }
 </div>
 <router-outlet />
