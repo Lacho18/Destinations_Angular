@@ -9,6 +9,7 @@
     gap: 40px;
     box-sizing: border-box;
     padding: 0 20px;
+    z-index: 20;
 }
 
 .header-div input {

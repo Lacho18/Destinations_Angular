@@ -1,8 +1,19 @@
 <div class="root-div">
+  @if(destinationID === 0) {
   <app-header />
 
-  @for(destination of destinationsArray; track destination.id) {
-  <app-destination-card />
+  <div class="destinations-div">
+    @for(destination of destinationsArray; track destination.id) {
+    <app-destination-card
+      [data]="destination"
+      (dataEmitter)="receivedId($event)"
+    />
+    }
+  </div>
+  } @else {
+  <app-destination-page [id]="destinationID" (back)="backHandler($event)" />
   }
+
+  <button (click)="handleChildEvent('123')">Click me pls</button>
 </div>
 <router-outlet />

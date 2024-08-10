@@ -1,53 +1,22 @@
-<p>destination-card works!</p>
-<p>destination-card works!</p>
-<p>destination-card works!</p>
-<p>destination-card works!</p>
-<p>destination-card works!</p>
-<p>destination-card works!</p>
-<p>destination-card works!</p>
-<p>destination-card works!</p>
-<p>destination-card works!</p>
-<p>destination-card works!</p>
-<p>destination-card works!</p>
-<p>destination-card works!</p>
-<p>destination-card works!</p>
-<p>destination-card works!</p>
-<p>destination-card works!</p>
-<p>destination-card works!</p>
-<p>destination-card works!</p>
-<p>destination-card works!</p>
-<p>destination-card works!</p>
-<p>destination-card works!</p>
-<p>destination-card works!</p>
-<p>destination-card works!</p>
-<p>destination-card works!</p>
-<p>destination-card works!</p>
-<p>destination-card works!</p>
-<p>destination-card works!</p>
-<p>destination-card works!</p>
-<p>destination-card works!</p>
-<p>destination-card works!</p>
-<p>destination-card works!</p>
-<p>destination-card works!</p>
-<p>destination-card works!</p>
-<p>destination-card works!</p>
-<p>destination-card works!</p>
-<p>destination-card works!</p>
-<p>destination-card works!</p>
-<p>destination-card works!</p>
-<p>destination-card works!</p>
-<p>destination-card works!</p>
-<p>destination-card works!</p>
-<p>destination-card works!</p>
-<p>destination-card works!</p>
-<p>destination-card works!</p>
-<p>destination-card works!</p>
-<p>destination-card works!</p>
-<p>destination-card works!</p>
-<p>destination-card works!</p>
-<p>destination-card works!</p>
-<p>destination-card works!</p>
-<p>destination-card works!</p>
-<p>destination-card works!</p>
-<p>destination-card works!</p>
-<p>destination-card works!</p>
+<div class="main-card" (click)="sendId(data.id)">
+  <div class="image-destination-div">
+    <img [src]="data.image" alt="image can't be loaded" />
+  </div>
+  <div>
+    <p style="font-size: 1.3em">{{ data.name }}</p>
+  </div>
+  <div style="align-self: flex-start; margin-left: 45px">
+    <ul>
+      <li>
+        Continent : <span>{{ data.location.continent }}</span>
+      </li>
+      <li>
+        Country : <span>{{ data.location.country }}</span>
+      </li>
+      <li>
+        Town : <span>{{ data.location.town }}</span>
+      </li>
+    </ul>
+  </div>
+  <button class="delete-button">X</button>
+</div>
