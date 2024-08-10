@@ -6,7 +6,8 @@ interface Destination {
         country: string,
         town: string,
     },
-    image: string
+    image: string,
+    themeColors?: [string, string]
 }
 
 export default Destination;

@@ -9,7 +9,8 @@ const destinations: Destination[] = [
             country: "Egypt",
             town: "Cairo",
         },
-        image: "https://media.istockphoto.com/id/177047347/photo/the-pyramids-of-giza.jpg?s=612x612&w=0&k=20&c=sNOn3ruKWcJD1bqi4AVgU7yNt7nChIA30oLfUfsZ4Ro="
+        image: "https://media.istockphoto.com/id/177047347/photo/the-pyramids-of-giza.jpg?s=612x612&w=0&k=20&c=sNOn3ruKWcJD1bqi4AVgU7yNt7nChIA30oLfUfsZ4Ro=",
+        themeColors: ['a', 'b']
     }, 
     {
         id: 2,
@@ -19,7 +20,8 @@ const destinations: Destination[] = [
             country: "Egypt",
             town: "Cairo",
         },
-        image: "https://media.istockphoto.com/id/177047347/photo/the-pyramids-of-giza.jpg?s=612x612&w=0&k=20&c=sNOn3ruKWcJD1bqi4AVgU7yNt7nChIA30oLfUfsZ4Ro="
+        image: "https://media.istockphoto.com/id/177047347/photo/the-pyramids-of-giza.jpg?s=612x612&w=0&k=20&c=sNOn3ruKWcJD1bqi4AVgU7yNt7nChIA30oLfUfsZ4Ro=",
+        themeColors: ['a', 'b']
     },
     {
         id: 3,
@@ -29,7 +31,8 @@ const destinations: Destination[] = [
             country: "Egypt",
             town: "Cairo",
         },
-        image: "https://media.istockphoto.com/id/177047347/photo/the-pyramids-of-giza.jpg?s=612x612&w=0&k=20&c=sNOn3ruKWcJD1bqi4AVgU7yNt7nChIA30oLfUfsZ4Ro="
+        image: "https://media.istockphoto.com/id/177047347/photo/the-pyramids-of-giza.jpg?s=612x612&w=0&k=20&c=sNOn3ruKWcJD1bqi4AVgU7yNt7nChIA30oLfUfsZ4Ro=",
+        themeColors: ['a', 'b']
     },
     {
         id: 4,
@@ -39,7 +42,8 @@ const destinations: Destination[] = [
             country: "Egypt",
             town: "Cairo",
         },
-        image: "https://media.istockphoto.com/id/177047347/photo/the-pyramids-of-giza.jpg?s=612x612&w=0&k=20&c=sNOn3ruKWcJD1bqi4AVgU7yNt7nChIA30oLfUfsZ4Ro="
+        image: "https://media.istockphoto.com/id/177047347/photo/the-pyramids-of-giza.jpg?s=612x612&w=0&k=20&c=sNOn3ruKWcJD1bqi4AVgU7yNt7nChIA30oLfUfsZ4Ro=",
+        themeColors: ['a', 'b']
     }
 ];
 
