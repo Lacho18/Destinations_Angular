@@ -1,6 +1,6 @@
 <div class="root-div">
   @if(destinationID === 0) {
-  <app-header />
+  <app-header (sendInput)="receivedInput($event)" />
 
   <div class="destinations-div">
     @for(destination of destinationsArray; track destination.id) {
@@ -16,7 +16,5 @@
     (back)="backHandler($event)"
   />
   }
-
-  <button (click)="handleChildEvent('123')">Click me pls</button>
 </div>
 <router-outlet />

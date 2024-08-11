@@ -7,7 +7,11 @@
     <h1>Tourist destinations</h1>
   </div>
   <div>
-    <input type="text" placeholder="🔎 Search" />
+    <input
+      type="text"
+      placeholder="🔎 Search"
+      (input)="changeHandler($event)"
+    />
   </div>
   <div class="user-header">
     <p>User</p>

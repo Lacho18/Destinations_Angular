@@ -29,6 +29,7 @@ export class AppComponent {
   textValue = '';
   receivedData = '';
   destinationID = 0;
+  userInput = '';
   destinationsArray = destinations;
 
   onChange(e: Event) {
@@ -49,5 +50,27 @@ export class AppComponent {
 
   backHandler(isClicked: boolean) {
     this.destinationID = 0;
+  }
+
+  receivedInput(input: string) {
+    console.log('From app component : ' + input);
+    this.userInput = input.trim();
+
+    if (input !== '') {
+      this.destinationsArray = destinations.filter((indexValue) => {
+        let name = indexValue.name as string;
+        let trimmedName = name.trim();
+        return this.checkForMatches(trimmedName, this.userInput);
+      });
+    } else {
+      this.destinationsArray = destinations;
+    }
+  }
+
+  checkForMatches(title: string, word: string) {
+    const escapedWord = word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    const regex = new RegExp(`${escapedWord}`, 'i');
+
+    return regex.test(title);
   }
 }
