@@ -7,6 +7,7 @@ interface Destination {
         town: string,
     },
     image: string,
+    moreImages?: string[],
     themeColors?: [string, string]
 }
 

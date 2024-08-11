@@ -1,0 +1,69 @@
+.destination-page {
+    width: 99vw;
+    height: auto;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 55px;
+}
+
+p {
+    font-size: 30px;
+}
+
+.main-section {
+    box-sizing: border-box;
+    padding: 0 50px;
+}
+
+section {
+    height: 700px;
+}
+
+.hero-section {
+    background-image: url("https://www.travelandleisure.com/thmb/U6Ts4f8fanbARIPQO9pEGzd8icA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/giza-pyramid-EGYPTSECRETS1016-617b2b1b23dd4fd38bc9f365af7235ab.jpg");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: black;
+}
+
+.hero-section h1 {
+    padding-bottom: 40px;
+    z-index: 5;
+}
+
+.hero-section p {
+    width: 65%;
+    z-index: 5;
+}
+
+.background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    background-color: orange;
+    mix-blend-mode: multiply;
+}
+
+/*---------------------------------------------------*/
+.location-description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.location-description>* {
+    flex-basis: 50%;
+}
+
+.location-description img {
+    width: 400px;
+    height: 350px;
+}

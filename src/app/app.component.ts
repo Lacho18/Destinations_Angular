@@ -22,7 +22,7 @@ export class AppComponent {
   title = 'my-app';
   textValue = "";
   receivedData = "";
-  destinationID = 0;
+  destinationID = 1;
   destinationsArray = destinations;
 
   onChange(e: Event) {

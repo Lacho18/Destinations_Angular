@@ -1,24 +1,29 @@
-import { Component, Input, Output, EventEmitter, OnInit   } from '@angular/core';
-
-import destinations from '../../data/destinations';
+import { Component, Input, Output, EventEmitter, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-destination-page',
   standalone: true,
   imports: [],
   templateUrl: './destination-page.component.html',
-  styleUrl: './destination-page.component.css'
+  styleUrl: './destination-page.component.css',
 })
 export class DestinationPageComponent {
-  @Input() data:any;
+  @Input() data: any;
   @Output() back = new EventEmitter<boolean>();
-  //objectData = destinations[this.id - 1];
 
-  ngOnInit() {
-    //this.objectData = destinations[this.id - 1];
-    //console.log(this.objectData);
-    console.log(this.data);
-  }
+  backgroundStyle: any = {};
+
+  /*ngOnInit() {
+    if (this.data?.themeColors && this.data.themeColors.length >= 2) {
+      const themeColor1 = this.data.themeColors[0];
+      const themeColor2 = this.data.themeColors[1];
+
+      // Set the background style dynamically based on themeColors
+      this.backgroundStyle = {
+        ' background-image': `linear-gradient(to right, ${themeColor1}, ${themeColor2})`,
+      };
+    }
+  }*/
 
   onBack() {
     this.back.emit(true);

@@ -1,6 +1,7 @@
 <div class="destination-page">
   <div class="main-section">
     <section class="hero-section">
+      <div class="background"></div>
       <h1>{{ data.name }}</h1>
       <p>
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis,
@@ -19,10 +20,10 @@
           molestiae ex error enim.
         </p>
       </div>
-      <img src="" />
+      <img [src]="data.moreImages[1]" />
     </section>
     <section class="location-description">
-      <img src="" />
+      <img [src]="data.moreImages[2]" />
       <div>
         <h1>{{ data.location.country }}</h1>
         <p>
@@ -43,7 +44,7 @@
           molestiae ex error enim.
         </p>
       </div>
-      <img src="" />
+      <img [src]="data.moreImages[3]" />
     </section>
   </div>
 </div>
