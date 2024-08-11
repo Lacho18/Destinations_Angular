@@ -1,27 +1,26 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
-
-import Destination from '../../data/destinationStructure';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-destination-card',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './destination-card.component.html',
-  styleUrl: './destination-card.component.css'
+  styleUrl: './destination-card.component.css',
 })
 export class DestinationCardComponent {
-  @Input() data:any;
-  @Output() dataEmitter = new EventEmitter<number>()
+  @Input() data: any;
+  @Output() dataEmitter = new EventEmitter<number>();
 
   constructor() {
     this.log();
   }
 
-  log():void {
+  log(): void {
     console.log(this.data);
   }
 
-  sendId(id:number) {
+  sendId(id: number) {
     console.log(id);
     this.dataEmitter.emit(id);
   }

@@ -23,23 +23,26 @@ section {
 }
 
 .hero-section {
-    background-image: url("https://www.travelandleisure.com/thmb/U6Ts4f8fanbARIPQO9pEGzd8icA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/giza-pyramid-EGYPTSECRETS1016-617b2b1b23dd4fd38bc9f365af7235ab.jpg");
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     position: relative;
     color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .hero-section h1 {
     padding-bottom: 40px;
     z-index: 5;
+    color: white;
 }
 
 .hero-section p {
     width: 65%;
     z-index: 5;
+    color: white;
 }
 
 .background {
@@ -66,4 +69,14 @@ section {
 .location-description img {
     width: 400px;
     height: 350px;
+}
+
+.back-button {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 100;
+    font-size: 27px;
+    padding: 3px;
+    background-color: blueviolet;
 }

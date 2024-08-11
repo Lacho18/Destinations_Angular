@@ -1,4 +1,15 @@
-<div class="main-card" (click)="sendId(data.id)">
+<div
+  class="main-card"
+  (click)="sendId(data.id)"
+  [ngStyle]="{
+    'background-image':
+      'linear-gradient(to right, ' +
+      data.themeColors[0] +
+      ',' +
+      data.themeColors[1] +
+      ')'
+  }"
+>
   <div class="image-destination-div">
     <img [src]="data.image" alt="image can't be loaded" />
   </div>

@@ -1,9 +1,10 @@
 import { Component, Input, Output, EventEmitter, OnInit } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-destination-page',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './destination-page.component.html',
   styleUrl: './destination-page.component.css',
 })
@@ -13,7 +14,7 @@ export class DestinationPageComponent {
 
   backgroundStyle: any = {};
 
-  /*ngOnInit() {
+  ngOnInit() {
     if (this.data?.themeColors && this.data.themeColors.length >= 2) {
       const themeColor1 = this.data.themeColors[0];
       const themeColor2 = this.data.themeColors[1];
@@ -23,7 +24,7 @@ export class DestinationPageComponent {
         ' background-image': `linear-gradient(to right, ${themeColor1}, ${themeColor2})`,
       };
     }
-  }*/
+  }
 
   onBack() {
     this.back.emit(true);

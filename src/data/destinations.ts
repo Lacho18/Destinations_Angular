@@ -21,39 +21,56 @@ const destinations: Destination[] = [
   },
   {
     id: 2,
-    name: 'The Egyptian pyramids',
+    name: 'The Rome Colosseum',
     location: {
-      continent: 'Africa',
-      country: 'Egypt',
-      town: 'Cairo',
+      continent: 'Europe',
+      country: 'Italy',
+      town: 'Rome',
     },
-    image:
-      'https://media.istockphoto.com/id/177047347/photo/the-pyramids-of-giza.jpg?s=612x612&w=0&k=20&c=sNOn3ruKWcJD1bqi4AVgU7yNt7nChIA30oLfUfsZ4Ro=',
-    themeColors: ['a', 'b'],
+    image: 'https://m.media-amazon.com/images/I/81rlnVwZAeL.jpg',
+    moreImages: [
+      'https://www.jigsawsuk.co.uk/wp-content/uploads/2021/07/coliseum-sunrise-3000-pcs-high-quality-collection_l8KQ83n.jpg',
+      'https://whc.unesco.org/uploads/thumbs/activity_875-1200-630-20220330134802.jpg',
+      'https://cdn.britannica.com/82/195482-050-2373E635/Amalfi-Italy.jpg',
+      'https://res.cloudinary.com/dtljonz0f/image/upload/f_auto/q_auto/v1/gc-v1/rome-and-vatican-pass/blog/coliseum-facts2.jpg',
+    ],
+    themeColors: ['#f5d142', '#f57e42'],
   },
   {
     id: 3,
-    name: 'The Egyptian pyramids',
+    name: 'The Belogradchik rocks',
     location: {
-      continent: 'Africa',
-      country: 'Egypt',
-      town: 'Cairo',
+      continent: 'Europe',
+      country: 'Bulgaria',
+      town: 'Belogradchik',
     },
     image:
-      'https://media.istockphoto.com/id/177047347/photo/the-pyramids-of-giza.jpg?s=612x612&w=0&k=20&c=sNOn3ruKWcJD1bqi4AVgU7yNt7nChIA30oLfUfsZ4Ro=',
-    themeColors: ['a', 'b'],
+      'https://freesofiatour.com/wp-content/uploads/2021/02/belogradchick-rocks-e1612861031735.jpg',
+    moreImages: [
+      'https://hotelmap.bg/uploads/images/gallery/c3e97c9115e913a131cb9e260a130c1b2f952232.jpg',
+      'https://static.toiimg.com/photo/msid-87137761,width-96,height-65.cms',
+      'https://www.balkantrails.com/wp-content/uploads/2024/05/Bulgaria-Travel-Guide-the-most-memorable-landmarks-and-must-see-destinations_BalkanTrails_2-1024x536.jpg',
+      'https://www.vagabond.bg/sites/default/files/2021-04/strange%20rocks%20belogradchik.jpg',
+    ],
+    themeColors: ['#b6f542', '#f59c42'],
   },
   {
     id: 4,
-    name: 'The Egyptian pyramids',
+    name: 'Osaka',
     location: {
-      continent: 'Africa',
-      country: 'Egypt',
-      town: 'Cairo',
+      continent: 'Asia',
+      country: 'Japan',
+      town: 'Osaka',
     },
     image:
-      'https://media.istockphoto.com/id/177047347/photo/the-pyramids-of-giza.jpg?s=612x612&w=0&k=20&c=sNOn3ruKWcJD1bqi4AVgU7yNt7nChIA30oLfUfsZ4Ro=',
-    themeColors: ['a', 'b'],
+      'https://www.nomadasaurus.com/wp-content/uploads/2019/09/Things-to-Do-in-Osaka-Japan.jpg',
+    moreImages: [
+      'https://res.klook.com/image/upload/q_85/c_fill,w_650,h_345/v1674030135/blog/bnbtltnp5nqbdevfcbmn.jpg',
+      'https://media.gadventures.com/media-server/cache/76/f5/76f5ac4e423593e9d9c2a06a22c166fb.jpg',
+      'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/26/97/39/7f/caption.jpg?w=1200&h=-1&s=1&cx=1920&cy=1080&chk=v1_f31158e4bb953d28a308',
+      'https://www.agoda.com/wp-content/uploads/2018/10/City-guides_things-to-do-in-Osaka_Japan_Osaka-Castle_cherry-blossoms_sakura.jpg',
+    ],
+    themeColors: ['#f542ec', '#f54275'],
   },
 ];
 

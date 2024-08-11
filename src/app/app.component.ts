@@ -14,15 +14,21 @@ import destinations from '../data/destinations';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, TestComponentComponent, HeaderComponent, DestinationCardComponent, DestinationPageComponent],
+  imports: [
+    RouterOutlet,
+    TestComponentComponent,
+    HeaderComponent,
+    DestinationCardComponent,
+    DestinationPageComponent,
+  ],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrl: './app.component.css',
 })
 export class AppComponent {
   title = 'my-app';
-  textValue = "";
-  receivedData = "";
-  destinationID = 1;
+  textValue = '';
+  receivedData = '';
+  destinationID = 0;
   destinationsArray = destinations;
 
   onChange(e: Event) {

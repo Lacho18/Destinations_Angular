@@ -1,7 +1,12 @@
-<div class="destination-page">
+<div class="destination-page" [ngStyle]="backgroundStyle">
   <div class="main-section">
-    <section class="hero-section">
-      <div class="background"></div>
+    <section
+      class="hero-section"
+      [ngStyle]="{
+        'background-image': 'url(' + data.moreImages[0] + ')'
+      }"
+    >
+      <div class="background" [ngStyle]="backgroundStyle"></div>
       <h1>{{ data.name }}</h1>
       <p>
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis,
@@ -49,4 +54,4 @@
   </div>
 </div>
 
-<button (click)="onBack()">Go back</button>
+<button class="back-button" (click)="onBack()">Go back</button>
