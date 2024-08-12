@@ -15,11 +15,46 @@
   </div>
   <div class="user-header">
     <p>User</p>
-    <button>
+    <button (click)="showLogInMenu()">
       <img
         src="https://icons.veryicon.com/png/o/internet--web/prejudice/user-128.png"
         alt="userImg"
       />
     </button>
   </div>
+</div>
+<div
+  class="menus-div"
+  [ngStyle]="
+    showMenu
+      ? {
+          display: 'flex'
+        }
+      : {
+          display: 'none'
+        }
+  "
+>
+  @if(hasLoggedIn) {
+  <button>Log out</button>
+  } @else {
+  <ul>
+    <li>
+      <a
+        routerLink="/logIn"
+        routerLinkActive="active"
+        ariaCurrentWhenActive="page"
+        >Log in</a
+      >
+    </li>
+    <li>
+      <a
+        routerLink="/signUp"
+        routerLinkActive="active"
+        ariaCurrentWhenActive="page"
+        >Sign up</a
+      >
+    </li>
+  </ul>
+  }
 </div>

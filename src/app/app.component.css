@@ -1,5 +1,6 @@
 .root-div {
     height: auto;
+    min-width: 100vw;
     min-height: 100vh;
     background-color: rgb(181, 128, 231);
     position: absolute;
@@ -16,7 +17,7 @@
     row-gap: 30px;
     width: 100%;
     position: relative;
-    margin-top: 20px;
+    margin-top: 80px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 10;
