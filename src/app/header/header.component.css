@@ -64,8 +64,14 @@
     height: 300px;
     background-color: rgb(245, 233, 233);
     z-index: 30;
+    justify-content: center;
+}
+
+.menus-div ul {
+    display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    list-style-type: none;
 }
 
 .menus-div li {

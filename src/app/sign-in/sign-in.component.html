@@ -1,42 +1,57 @@
-<div>
+<div class="log-in-div">
   <form (submit)="submitHandler($event)">
-    <p>Creating account</p>
-    <label for="username">Enter your username</label>
-    <input
-      type="text"
-      placeholder="Username"
-      name="username"
-      (change)="changeHandler($event)"
-    />
-    <label for="password">Enter your password</label>
-    <input
-      type="password"
-      placeholder="Password"
-      name="password"
-      (change)="changeHandler($event)"
-    />
-    <label for="gender">Enter your gender</label>
-    <input
-      type="radio"
-      placeholder="Password"
-      name="gender"
-      value="male"
-      (change)="changeHandler($event)"
-    />
-    <input
-      type="radio"
-      placeholder="Password"
-      name="gender"
-      value="female"
-      (change)="changeHandler($event)"
-    />
-    <label for="email">Enter your email</label>
-    <input
-      type="email"
-      placeholder="Email"
-      name="email"
-      (change)="changeHandler($event)"
-    />
-    <input type="submit" />
+    <p class="create-title">Creating account</p>
+    <div class="form-group">
+      <label for="username">Enter your username</label>
+      <input
+        type="text"
+        placeholder="Username"
+        name="username"
+        (change)="changeHandler($event)"
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="password">Enter your password</label>
+      <input
+        type="password"
+        placeholder="Password"
+        name="password"
+        (change)="changeHandler($event)"
+      />
+    </div>
+    <div class="form-group">
+      <label for="gender">Enter your gender</label>
+      <div class="gender-div">
+        <p>Male</p>
+        <input
+          type="radio"
+          placeholder="Password"
+          name="gender"
+          value="male"
+          (change)="changeHandler($event)"
+        />
+      </div>
+      <div class="gender-div">
+        <p>Female</p>
+        <input
+          type="radio"
+          placeholder="Password"
+          name="gender"
+          value="female"
+          (change)="changeHandler($event)"
+        />
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="email">Enter your email</label>
+      <input
+        type="email"
+        placeholder="Email"
+        name="email"
+        (change)="changeHandler($event)"
+      />
+      <input type="submit" />
+    </div>
   </form>
 </div>

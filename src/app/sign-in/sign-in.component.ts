@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
   standalone: true,
   imports: [],
   templateUrl: './sign-in.component.html',
-  styleUrl: './sign-in.component.css',
+  styleUrl: '../log-in/log-in.component.css',
 })
 export class SignInComponent {
   newUser: any = {};

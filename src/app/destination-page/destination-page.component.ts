@@ -21,7 +21,7 @@ export class DestinationPageComponent {
 
       // Set the background style dynamically based on themeColors
       this.backgroundStyle = {
-        ' background-image': `linear-gradient(to right, ${themeColor1}, ${themeColor2})`,
+        'background-image': `linear-gradient(to right, ${themeColor1}, ${themeColor2})`,
       };
     }
   }
