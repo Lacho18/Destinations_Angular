@@ -1,1 +1,42 @@
-<p>sign-in works!</p>
+<div>
+  <form (submit)="submitHandler($event)">
+    <p>Creating account</p>
+    <label for="username">Enter your username</label>
+    <input
+      type="text"
+      placeholder="Username"
+      name="username"
+      (change)="changeHandler($event)"
+    />
+    <label for="password">Enter your password</label>
+    <input
+      type="password"
+      placeholder="Password"
+      name="password"
+      (change)="changeHandler($event)"
+    />
+    <label for="gender">Enter your gender</label>
+    <input
+      type="radio"
+      placeholder="Password"
+      name="gender"
+      value="male"
+      (change)="changeHandler($event)"
+    />
+    <input
+      type="radio"
+      placeholder="Password"
+      name="gender"
+      value="female"
+      (change)="changeHandler($event)"
+    />
+    <label for="email">Enter your email</label>
+    <input
+      type="email"
+      placeholder="Email"
+      name="email"
+      (change)="changeHandler($event)"
+    />
+    <input type="submit" />
+  </form>
+</div>

@@ -1,5 +1,11 @@
 import { Component, Input } from '@angular/core';
-import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
+import {
+  ActivatedRoute,
+  Router,
+  RouterLink,
+  RouterLinkActive,
+  RouterOutlet,
+} from '@angular/router';
 //import testComponent from './test-component/test-component.component';
 
 //components
@@ -34,18 +40,24 @@ export class HomeComponent {
   userInput = '';
   destinationsArray = destinations;
 
-  user = {};
+  user: any = {};
+
+  constructor(private route: ActivatedRoute, private router: Router) {}
+
+  ngOnInit() {
+    const username = this.route.snapshot.paramMap.get('user');
+    this.user.username = username;
+    console.log(username);
+  }
 
   onChange(e: Event) {
     e.preventDefault();
     const inputElement = e.target as HTMLInputElement;
     this.textValue = inputElement.value;
-    console.log(this.textValue);
   }
 
   handleChildEvent(data: string) {
     this.receivedData = data;
-    console.log(this.destinationsArray);
   }
 
   receivedId(id: number) {
@@ -57,7 +69,11 @@ export class HomeComponent {
   }
 
   receivedInput(input: string) {
-    console.log('From app component : ' + input);
+    if (input === 'User ' + this.user.username + ' has logged out') {
+      this.user = {};
+      return;
+    }
+
     this.userInput = input.trim();
 
     if (input !== '') {

@@ -12,14 +12,6 @@ export class DestinationCardComponent {
   @Input() data: any;
   @Output() dataEmitter = new EventEmitter<number>();
 
-  constructor() {
-    this.log();
-  }
-
-  log(): void {
-    console.log(this.data);
-  }
-
   sendId(id: number) {
     console.log(id);
     this.dataEmitter.emit(id);

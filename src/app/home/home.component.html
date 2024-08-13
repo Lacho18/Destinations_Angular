@@ -1,6 +1,6 @@
 <div class="root-div">
   @if(destinationID === 0) {
-  <app-header (sendInput)="receivedInput($event)" />
+  <app-header [user]="user" (sendInput)="receivedInput($event)" />
 
   <div class="destinations-div">
     @for(destination of destinationsArray; track destination.id) {

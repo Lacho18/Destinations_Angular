@@ -12,6 +12,7 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
 export class HeaderComponent {
   @Output() sendInput = new EventEmitter<string>();
   @Input() hasLoggedIn = false;
+  @Input() user: any;
   showMenu = false;
 
   changeHandler(event: Event): void {
@@ -23,5 +24,9 @@ export class HeaderComponent {
 
   showLogInMenu() {
     this.showMenu = !this.showMenu;
+  }
+
+  loggingOut() {
+    this.sendInput.emit('User ' + this.user.username + ' has logged out');
   }
 }

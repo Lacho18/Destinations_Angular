@@ -1,1 +1,22 @@
-<p style="font-size: 4em">log-in works!</p>
+<div>
+  <form (submit)="submitHandler($event)">
+    @if(errorMessage !== '') {
+    <p id="error-message">{{ errorMessage }}</p>
+    }
+    <label for="username">Enter your username</label>
+    <input
+      type="text"
+      placeholder="Username"
+      name="username"
+      (change)="changeHandler($event)"
+    />
+    <label for="password">Enter your password</label>
+    <input
+      type="password"
+      placeholder="Password"
+      name="password"
+      (change)="changeHandler($event)"
+    />
+    <input type="submit" />
+  </form>
+</div>

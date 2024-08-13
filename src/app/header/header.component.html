@@ -14,7 +14,12 @@
     />
   </div>
   <div class="user-header">
+    @if(user.username) {
+    <p>Welcome {{ user.username }}</p>
+    } @else {
     <p>User</p>
+    }
+
     <button (click)="showLogInMenu()">
       <img
         src="https://icons.veryicon.com/png/o/internet--web/prejudice/user-128.png"
@@ -35,8 +40,8 @@
         }
   "
 >
-  @if(hasLoggedIn) {
-  <button>Log out</button>
+  @if(user.username) {
+  <button (click)="loggingOut()">Log out</button>
   } @else {
   <ul>
     <li>
