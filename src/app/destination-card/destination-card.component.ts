@@ -9,7 +9,7 @@ import { CommonModule } from '@angular/common';
   styleUrl: './destination-card.component.css',
 })
 export class DestinationCardComponent {
-  @Input() data: any;
+  @Input() data: any;     
   @Output() dataEmitter = new EventEmitter<number>();
 
   sendId(id: number) {
